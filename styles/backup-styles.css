@@ -1,44 +1,44 @@
 @media (max-width: 767.98px) {
   .main-container{
-      margin: 0;
-      padding: 0;
+  margin: 0;
+  padding: 0;
   }
   body {
-    margin: 0;
+  margin: 0;
   }
   .logo {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
   }
   .logo img{
-    width: 45%;
+  width: 45%;
   }
   .banner {
-    display: flex;
-    justify-content: center;
-    background-color: #EAEAEA;
-    width: 100%;
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+  width: 100%;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.3);
   }
   .banner i{
-    padding-top: 16px;
+  padding-top: 16px;
   }
   .banner-location{
-    padding-left: 15px;
+  padding-left: 15px;
   }
  .informations{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  }
  .titre-information{
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      width: 75%;
-      font-size: 24px;
-      text-align: center;
-      margin: 0;
-      margin-top: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 75%;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
  }
  .info-p{
   margin: 0;
@@ -57,6 +57,11 @@
   background:linear-gradient(180deg,#FF79DA,#9356DC);
   color: #ffff;
   border: none;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.2));
+  transition: 0.3s;
+ }
+ .info-button:hover{
+opacity: 0.5;
  }
  .info-button p{
   margin: 0;
@@ -113,7 +118,7 @@
  }
  .card img{
   width: 100%;
-  height: 230px;
+  height: 150px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -121,13 +126,13 @@
  }
  .restaurant-cards .card{
   display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Ensure the content fills the space */
-            height: 100%; /* Make sure all cards have the same height */
-            background-color: white;
-            border-radius: 20px;
-            box-sizing: border-box;
-            overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
   
  
  }

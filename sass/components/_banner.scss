@@ -1,0 +1,15 @@
+@media (max-width: 767.98px) {
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: $gray;
+    width: 100%;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.3);
+    i{
+    padding-top: 16px;
+    }
+    &-location{
+    padding-left: 15px;
+    }
+}
+}
