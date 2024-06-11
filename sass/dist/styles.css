@@ -1,18 +1,18 @@
 @media (max-width: 767.98px) {
-.banner {
-  display: flex;
-  justify-content: center;
-  background-color: #EAEAEA;
-  width: 100%;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.3);
+  .banner {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+    width: 100%;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+  .banner i {
+    padding-top: 16px;
+  }
+  .banner-location {
+    padding-left: 15px;
+  }
 }
-.banner i {
-  padding-top: 16px;
-}
-.banner-location {
-  padding-left: 15px;
-}
-
 .logo {
   display: flex;
   justify-content: center;
@@ -194,5 +194,4 @@ footer {
 
 .menu-footer i {
   padding-right: 10px;
-}
 }
