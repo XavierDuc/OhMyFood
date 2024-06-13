@@ -22,8 +22,7 @@
 .restaurant-cards .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: center;
   background-color: white;
   border-radius: 20px;
   box-sizing: border-box;

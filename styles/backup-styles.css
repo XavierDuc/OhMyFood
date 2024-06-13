@@ -183,6 +183,9 @@ padding-bottom: 18px;
  .card-r-text h3,p{
   font-family:  'Roboto' , sans-serif;
  }
+ .prix{
+  padding-right: 10px;
+ }
  .fav-icon{
   padding-right: 10px;
 }
