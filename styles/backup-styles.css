@@ -6,13 +6,16 @@
   body {
   margin: 0;
   }
-  .logo {
+  .logo-r {
   display: flex;
   justify-content: center;
   margin: 10px;
+  align-items: center;
+  justify-content: space-between;
   }
-  .logo img{
+  .logo-r img{
   width: 45%;
+  padding-right: 75px;
   }
   .banner {
   display: flex;
@@ -48,7 +51,7 @@
   width: 90%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
- .info-button{
+ .info-button-r{
   margin-top: 10px;
   margin-bottom: 20px;
   width: 66%;
@@ -60,10 +63,10 @@
   filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.2));
   transition: 0.3s;
  }
- .info-button:hover{
+ .info-button-r:hover{
 opacity: 0.5;
  }
- .info-button p{
+ .info-button-r p{
   margin: 0;
   font-family: 'roboto', sans-serif;
  }
@@ -113,12 +116,12 @@ opacity: 0.5;
   margin: 0;
   margin-bottom: 20px;
  }
- .nom-restaurant{
+ .restaurant-name{
   display: flex;
   align-items: center;
   justify-content: space-between;
  }
- .nom-restaurant i{
+ .restaurant-name i{
 padding-bottom: 18px;
  }
  .menu p{
@@ -136,18 +139,18 @@ padding-bottom: 18px;
   height: 2px; 
   background-color: #99E2D0; 
 }
- .restaurant-cards{
+ .restaurant-card-r{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
  }
- .restaurant-cards a{
+ .restaurant-card-r a{
   width: 100%;
   padding-bottom: 20px;
   text-decoration: none;
   color: black;
  }
- .card img{
+ .card-r img{
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -155,7 +158,7 @@ padding-bottom: 18px;
   border-top-right-radius: 20px;
  
  }
- .restaurant-cards .card{
+ .restaurant-card-r .card-r{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,15 +170,18 @@ padding-bottom: 18px;
   
  
  }
- .card-content{
+ .card-r-content{
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   flex-grow: 1; 
  }
- .card-text{
+ .card-r-text{
   padding-left: 10px;
+ }
+ .card-r-text h3,p{
+  font-family:  'Roboto' , sans-serif;
  }
  .fav-icon{
   padding-right: 10px;
@@ -211,7 +217,7 @@ footer{
 .photo img{
   width: 100%;
 }
-.button{
+.button-r{
   display: flex;
   justify-content: space-around;
 }

@@ -1,0 +1,16 @@
+.logo-r {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-r img {
+  width: 45%;
+  padding-right: 75px;
+}
+
+.photo img {
+  width: 100%;
+}

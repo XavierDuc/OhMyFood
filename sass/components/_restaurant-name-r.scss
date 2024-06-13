@@ -1,0 +1,17 @@
+.restaurant-title-r{
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: italic;
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+   }
+   .restaurant-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   & i{
+  padding-bottom: 18px;
+   }
+}

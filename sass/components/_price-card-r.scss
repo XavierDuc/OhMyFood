@@ -1,0 +1,59 @@
+.menu p{
+    font-weight: 300;
+    font-family: 'roboto', sans-serif;
+    position: relative;
+    display: inline-block;
+   }
+   .menu p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 38px;
+    height: 2px; 
+    background-color: #99E2D0; 
+  }
+   .restaurant-card-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   .restaurant-card-r a{
+    width: 100%;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+   }
+   .card-r img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+   }
+   .restaurant-card-r .card-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+   
+   }
+   .card-r-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-grow: 1; 
+   }
+   .card-r-text{
+    padding-left: 10px;
+   }
+   .card-r-text h3,p{
+    font-family:  'Roboto' , sans-serif;
+   }
