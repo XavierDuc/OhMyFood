@@ -5,5 +5,8 @@
     img{
     width: 45%;
     }
+    @media (min-width: $breakpoint-desktop){
+        background-color: red;
+    }
 }
 
