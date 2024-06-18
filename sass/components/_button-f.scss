@@ -17,3 +17,63 @@
     color: black;
     border: none;
    }
+   .button-f p{
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+   }
+   .circle1 p{
+    color: white;
+    z-index: 1;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    left: 30px;
+    top: 385px;;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'roboto', sans-serif;
+
+   }
+   .circle2 p{
+    top: 475px;
+    color: white;
+    z-index: 1;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    left: 30px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'roboto', sans-serif;
+
+   }  .circle3 p{
+    bottom: 165px;
+    color: white;
+    z-index: 1;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    left: 30px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'roboto', sans-serif;
+   }
+   .fa-store{
+    color: #9356DC;
+   }
+
