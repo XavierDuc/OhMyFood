@@ -8,3 +8,15 @@
     font-family: 'roboto', sans-serif;
    }
 }
+@media (min-width: $breakpoint-desktop){
+    .fonctionnement{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+       
+       &-title{
+        padding-left: 180px;
+        font-family: 'roboto', sans-serif;
+       }
+    }
+}

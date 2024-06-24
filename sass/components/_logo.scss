@@ -5,8 +5,16 @@
     img{
     width: 45%;
     }
+}
     @media (min-width: $breakpoint-desktop){
-        background-color: red;
+        .logo{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        img{
+        width: 20%;
+        justify-content: center;
+        }
     }
 }
 
