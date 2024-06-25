@@ -25,3 +25,35 @@
   padding-bottom: 18px;
    }
 }
+@media (min-width: $breakpoint-desktop){
+    .restaurant{
+        left: 10%;
+        width: 80%;
+        padding: 10px;
+        background-color: #F6F6F6;
+        box-sizing: border-box;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        position: relative;
+        margin-top: -30px;
+        z-index: 1;
+       }
+    .restaurant-title-r{
+        font-family: "Shrikhand", serif;
+        font-weight: 400;
+        font-style: italic;
+        padding-right: 10px;
+        margin: 0;
+        margin-bottom: 20px;
+       }
+       .restaurant-name{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+       & i{
+      padding-bottom: 18px;
+       }
+    }
+}

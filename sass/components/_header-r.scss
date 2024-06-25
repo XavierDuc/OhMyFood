@@ -1,15 +1,42 @@
 .logo-r {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
     }
-    .logo-r img{
-    width: 45%;
-    padding-right: 75px;
-    }
+    .arrow {
+      position: absolute;
+      left: 10px;
+  }
+  .ohmyfoodlogo img {
+    max-width: 50%;
+    padding-left: 70px;
+}
     .photo img{
         width: 100%;
         height: 215px;
+      }
+      @media (min-width: $breakpoint-desktop){
+        .logo-r {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: 10px;
+          background-color: #fff;
+            }
+            .arrow {
+              position: absolute;
+              left: 10px;
+          }
+          .ohmyfoodlogo img {
+            max-width: 50%;
+            padding-left: 70px;
+        }
+            .photo img{
+                width: 100%;
+                height: 215px;
+              }
       }
