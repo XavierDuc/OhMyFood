@@ -4,8 +4,14 @@
     padding-bottom: 30px;
    
    &-title{
+    margin-bottom: -20px;
     padding-left: 10px;
     font-family: 'roboto', sans-serif;
+   }
+   &-row{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
    }
 }
 @media (min-width: $breakpoint-desktop){
@@ -15,7 +21,7 @@
         padding-bottom: 50px;
        
        &-title{
-        padding-left: 180px;
+        padding-left: 120px;
         font-family: 'roboto', sans-serif;
        }
     }

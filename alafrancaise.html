@@ -19,11 +19,13 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="main-container-r">
         <header>
             <div class="logo-r">
-                <i class="fa-solid fa-arrow-left"></i>
-                <img src="/images/logo/ohmyfood.png" alt="Logo ohmyfood">
+                <div class="arrow"> <a href="acceuil.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+                <div class="ohmyfoodlogo"><img src="/images/logo/ohmyfood.png" alt="Logo ohmyfood"></div>
+
+
             </div>
             <div class="photo">
                 <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo la palette du gout">
@@ -35,169 +37,172 @@
         <section class="restaurant">
             <div class="restaurant-name">
                 <h1 class="restaurant-title-r">À la française</h1>
-                <i class="fa-regular fa-heart"></i>
+                < <div class="fav-icon">
+                    <input type="checkbox" id="fav-toggle4" class="hidden">
+                    <label for="fav-toggle4" class="icon"></label>
             </div>
-            <div class="restaurant-card-r">
-                <div class="menu">
-                    <p class="menu-title">ENTRÉES</p>
+    </div>
+    <div class="restaurant-card-r">
+        <div class="menu">
+            <p class="menu-title">ENTRÉES</p>
+        </div>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Tartare de poulpe acidulé</h3>
+                        <p class="card-r-subtitle">Aux zestes d'orange</p>
+                    </div>
+                    <div class="prix">
+                        <p>25€</p>
+                    </div>
                 </div>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Tartare de poulpe acidulé</h3>
-                                <p class="card-r-subtitle">Aux zestes d'orange</p>
-                            </div>
-                            <div class="prix">
-                                <p>25€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Velouté de légumes d'antan</h3>
-                                <p class="card-r-subtitle">Carotte, panais, topinambour</p>
-                            </div>
-                            <div class="prix">
-                                <p>35€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Soupe à l'oignon</h3>
-                                <p class="card-r-subtitle">Revisitée</p>
-                            </div>
-                            <div class="prix">
-                                <p>20€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <div class="restaurant-card-r">
-                <div class="menu">
-                    <p class="menu-title">PLATS</p>
+            </article>
+        </a>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Velouté de légumes d'antan</h3>
+                        <p class="card-r-subtitle">Carotte, panais, topinambour</p>
+                    </div>
+                    <div class="prix">
+                        <p>35€</p>
+                    </div>
                 </div>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Coquilles Saint-Jacques</h3>
-                                <p class="card-r-subtitle">Accompagnées d'une purée de panais</p>
-                            </div>
-                            <div class="prix">
-                                <p>40€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Magret de canard</h3>
-                                <p class="card-r-subtitle">Et parmentier de pommes de terre</p>
-                            </div>
-                            <div class="prix">
-                                <p>35€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Pigeonneau d’Ille-et-Vilaine</h3>
-                                <p class="card-r-subtitle">Sur son lit de gnocchis aux légumes</p>
-                            </div>
-                            <div class="prix">
-                                <p>44€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <div class="restaurant-card-r">
-                <div class="menu">
-                    <p class="menu-title">DESSERTS</p>
+            </article>
+        </a>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Soupe à l'oignon</h3>
+                        <p class="card-r-subtitle">Revisitée</p>
+                    </div>
+                    <div class="prix">
+                        <p>20€</p>
+                    </div>
                 </div>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Pétales de violettes glacés</h3>
-                                <p class="card-r-subtitle">Et purée de noisettes</p>
-                            </div>
-                            <div class="prix">
-                                <p>18€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Fondant au chocolat</h3>
-                                <p class="card-r-subtitle">Revisité</p>
-                            </div>
-                            <div class="prix">
-                                <p>22€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-r">
-                        <div class="card-r-content">
-                            <div class="card-r-text">
-                                <h3 class="card-r-title">Millefeuille croustillant</h3>
-                                <p class="card-r-subtitle">Myrtilles et pâte d’amande</p>
-                            </div>
-                            <div class="prix">
-                                <p>23€</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <div class="button-r">
-                <button class="info-button-r">
-                    <p>Commander</p>
-                </button>
-            </div>
-        </section>
+            </article>
+        </a>
+    </div>
+    <div class="restaurant-card-r">
+        <div class="menu">
+            <p class="menu-title">PLATS</p>
+        </div>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Coquilles Saint-Jacques</h3>
+                        <p class="card-r-subtitle">Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="prix">
+                        <p>40€</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Magret de canard</h3>
+                        <p class="card-r-subtitle">Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="prix">
+                        <p>35€</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Pigeonneau d’Ille-et-Vilaine</h3>
+                        <p class="card-r-subtitle">Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="prix">
+                        <p>44€</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+    </div>
+    <div class="restaurant-card-r">
+        <div class="menu">
+            <p class="menu-title">DESSERTS</p>
+        </div>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Pétales de violettes glacés</h3>
+                        <p class="card-r-subtitle">Et purée de noisettes</p>
+                    </div>
+                    <div class="prix">
+                        <p>18€</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Fondant au chocolat</h3>
+                        <p class="card-r-subtitle">Revisité</p>
+                    </div>
+                    <div class="prix">
+                        <p>22€</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+        <a href="#">
+            <article class="card-r">
+                <div class="card-r-content">
+                    <div class="card-r-text">
+                        <h3 class="card-r-title">Millefeuille croustillant</h3>
+                        <p class="card-r-subtitle">Myrtilles et pâte d’amande</p>
+                    </div>
+                    <div class="prix">
+                        <p>23€</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+    </div>
+    <div class="button-r">
+        <button class="info-button-r">
+            <p>Commander</p>
+        </button>
+    </div>
+    </section>
 
 
-        <footer>
-            <div class="footer-logo">
-                <img src="/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="logo-img">
-            </div>
-            <div class="menu-footer">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a>
-                    </li>
-                    <li>
-                        <a href="#">Mentions légales</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+    <footer>
+        <div class="footer-logo">
+            <img src="/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="logo-img">
+        </div>
+        <div class="menu-footer">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     </div>
 </body>
 

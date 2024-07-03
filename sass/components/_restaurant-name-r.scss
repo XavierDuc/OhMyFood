@@ -13,6 +13,7 @@
     font-weight: 400;
     font-style: italic;
     padding-left: 10px;
+    padding-top: 10px;
     margin: 0;
     margin-bottom: 20px;
    }
@@ -24,25 +25,54 @@
    & i{
   padding-bottom: 18px;
    }
+   .hidden {
+    display: none;
+  }
+  
+  .icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: -40px;
+  }
+  
+  
+  .icon:before {
+      content: "\f004";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 400; 
+      color: black;
+  }
+  
+  
+  .hidden:checked + .icon:before {
+      font-weight: 900; 
+      background: linear-gradient(360deg, #FF79DA, #9356DC);;
+      -webkit-background-clip: text;
+      color: transparent;
+  }
 }
 @media (min-width: $breakpoint-desktop){
     .restaurant{
-        left: 10%;
-        width: 80%;
+        
+        width: 82%;
         padding: 10px;
         background-color: #F6F6F6;
         box-sizing: border-box;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         position: relative;
-        margin-top: -30px;
+        margin: 0 auto;
         z-index: 1;
+        margin-top: -30px;
+        left: -15px;
        }
     .restaurant-title-r{
         font-family: "Shrikhand", serif;
         font-weight: 400;
         font-style: italic;
         padding-right: 10px;
+        padding-top: 10px;
         margin: 0;
         margin-bottom: 20px;
        }

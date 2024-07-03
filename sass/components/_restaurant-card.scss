@@ -51,31 +51,32 @@
   padding-left: 10px;
 }
 
-/* Hide the checkbox */
+
 .hidden {
   display: none;
 }
 
-/* Style the label as the icon */
 .icon {
-  font-size: 30px;
+  font-size: 22px;
   padding-right: 30px;
   cursor: pointer;
   display: inline-block;
  
 }
 
-/* Default regular (outline) icon with black borders */
+
 .icon:before {
-    content: "\f004"; /* Unicode for heart */
+    content: "\f004"; 
     font-family: "Font Awesome 6 Free";
-    font-weight: 400; /* Regular */
+    font-weight: 400;
     color: black;
+    font-size: 22px;
+    margin-top: -20px; 
 }
 
 
 .hidden:checked + .icon:before {
-    font-weight: 900; /* Solid */
+    font-weight: 400; 
     background: linear-gradient(360deg, #FF79DA, #9356DC);;
     -webkit-background-clip: text;
     color: transparent;
