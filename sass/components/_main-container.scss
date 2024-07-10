@@ -1,20 +1,18 @@
-/* Reset margins and padding */
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Prevent scrolling while the loader is displayed */
   }
   
-  /* Style for the loader */
+ 
   .loader {
-    border: 16px solid #99E2D0; /* Light grey */
-    border-top: 16px solid #FF79DA ; /* Blue */
+    border: 16px solid #99E2D0; 
+    border-top: 16px solid #FF79DA ;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 1s linear infinite, fadeOut 2s forwards; /* Fade out after 3s */
+    animation: spin 1s linear infinite, fadeOut 2s forwards;
     position: fixed;
     top: 40%;
     left: 30%;
@@ -32,21 +30,21 @@ body, html {
     100% { transform: rotate(360deg); }
   }
   
-  /* Fade out animation */
+
   @keyframes fadeOut {
     0% { opacity: 1; }
     99% { opacity: 1; }
     100% { opacity: 0; visibility: hidden; }
   }
   
-  /* Initially hide the main content */
+
   .main-container {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
   
-  /* Show the main content after the loader fades out */
+
   body.loaded .loader {
     display: none;
   }

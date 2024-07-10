@@ -49,23 +49,20 @@
     justify-content: center;
   }
 }
-/* Reset margins and padding */
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Prevent scrolling while the loader is displayed */
 }
 
-/* Style for the loader */
 .loader {
-  border: 16px solid #99E2D0; /* Light grey */
-  border-top: 16px solid #FF79DA; /* Blue */
+  border: 16px solid #99E2D0;
+  border-top: 16px solid #FF79DA;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 1s linear infinite, fadeOut 2s forwards; /* Fade out after 3s */
+  animation: spin 1s linear infinite, fadeOut 2s forwards;
   position: fixed;
   top: 40%;
   left: 30%;
@@ -88,7 +85,6 @@ body, html {
     transform: rotate(360deg);
   }
 }
-/* Fade out animation */
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -101,14 +97,12 @@ body, html {
     visibility: hidden;
   }
 }
-/* Initially hide the main content */
 .main-container {
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Show the main content after the loader fades out */
 body.loaded .loader {
   display: none;
 }
@@ -330,6 +324,38 @@ body.loaded .main-container {
   padding-bottom: 20px;
   text-decoration: none;
   color: black;
+  margin-left: 10px;
+}
+
+.card {
+  background-color: red;
+  width: 95%;
+  margin-top: 15px;
+}
+
+.card-header {
+  height: 150px;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-heading-lapalettedugout {
+  background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-heading-lanoteenchantee {
+  background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card img {
@@ -392,13 +418,13 @@ body.loaded .main-container {
 }
 
 .hidden:checked + .icon:before {
-  font-weight: 400;
+  font-weight: 900;
   background: linear-gradient(360deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.nouveau p {
+.label {
   margin: 0;
   padding: 0;
   background-color: #99E2D0;
@@ -407,28 +433,8 @@ body.loaded .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: 30px;
-  top: 100px;
   color: #008766;
-  border-radius: 2px;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-.nouveau2 p {
-  margin: 0;
-  padding: 0;
-  background-color: #99E2D0;
-  height: 29px;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 30px;
-  top: 360px;
-  color: #008766;
+  border-width: 0;
   border-radius: 2px;
   font-family: "roboto", sans-serif;
   font-size: 14px;
@@ -489,26 +495,23 @@ body.loaded .main-container {
   .card-text {
     padding-left: 10px;
   }
-  /* Hide the checkbox */
   .hidden {
     display: none;
   }
-  /* Style the label as the icon */
   .icon {
     font-size: 30px;
     padding-right: 30px;
     cursor: pointer;
     display: inline-block;
   }
-  /* Default regular (outline) icon with black borders */
   .icon:before {
-    content: "\f004"; /* Unicode for heart */
+    content: "\f004";
     font-family: "Font Awesome 6 Free";
-    font-weight: 400; /* Regular */
+    font-weight: 400;
     color: black;
   }
   .hidden:checked + .icon:before {
-    font-weight: 900; /* Solid */
+    font-weight: 900;
     background: linear-gradient(360deg, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     color: transparent;
@@ -523,25 +526,8 @@ body.loaded .main-container {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 30px;
-    top: 100px;
-    color: #008766;
-    border-radius: 2px;
-    font-family: "roboto", sans-serif;
-    font-size: 14px;
-  }
-  .nouveau2 p {
-    margin: 0;
-    padding: 0;
-    background-color: #99E2D0;
-    height: 29px;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 30px;
-    top: 360px;
+    margin-top: -130px;
+    margin-left: 155px;
     color: #008766;
     border-radius: 2px;
     font-family: "roboto", sans-serif;
@@ -564,6 +550,11 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   background-color: black;
+}
+@media (min-width: 767.98px) {
+  footer {
+    display: flex;
+  }
 }
 
 .footer-logo .logo-img {
@@ -612,6 +603,7 @@ footer {
 .photo img {
   width: 100%;
   height: 275px;
+  object-fit: cover;
 }
 
 @media (min-width: 767.98px) {
@@ -779,20 +771,133 @@ footer {
 
 .card-r-text {
   padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-r-text h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-r-text p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .prix {
-  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.prix p {
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+
+.card-r:hover .icon-container {
+  opacity: 1;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 94.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container i {
+  color: white;
+  font-size: 18px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.restaurant-card-r {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.restaurant-card-r:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.restaurant-card-r:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+.restaurant-card-r:nth-of-type(3) {
+  animation-delay: 1.8s;
+}
+
+.restaurant-card-r a {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.restaurant-card-r:nth-of-type(1) a:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.restaurant-card-r:nth-of-type(1) a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.restaurant-card-r:nth-of-type(1) a:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.restaurant-card-r:nth-of-type(2) a:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.restaurant-card-r:nth-of-type(2) a:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.restaurant-card-r:nth-of-type(2) a:nth-child(4) {
+  animation-delay: 1.6s;
+}
+
+.restaurant-card-r:nth-of-type(3) a:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.restaurant-card-r:nth-of-type(3) a:nth-child(3) {
+  animation-delay: 2.2s;
+}
+
+.restaurant-card-r:nth-of-type(3) a:nth-child(4) {
+  animation-delay: 2.4s;
+}
+
+.restaurant-card-r:nth-of-type(4) a:nth-child(2) {
+  animation-delay: 2.6s;
+}
+
+.restaurant-card-r:nth-of-type(4) a:nth-child(3) {
+  animation-delay: 2.8s;
+}
+
+.restaurant-card-r:nth-of-type(4) a:nth-child(4) {
+  animation-delay: 3s;
 }
 
 @media (min-width: 767.98px) {
@@ -857,9 +962,6 @@ footer {
   .card-r-text p {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-  }
-  .prix {
-    padding-right: 5px;
   }
 }
 .info-button-r {

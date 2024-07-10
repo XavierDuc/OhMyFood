@@ -41,8 +41,6 @@
     border-radius: 20px;
     box-sizing: border-box;
     overflow: hidden;
-    
-   
    }
    .card-r-content{
     display: flex;
@@ -53,18 +51,98 @@
    }
    .card-r-text{
     padding-left: 10px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
    }
    .card-r-text h3{
     font-family:  'Roboto' , sans-serif;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
    }
    .card-r-text p{
     font-family:  'Roboto' , sans-serif;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
    }
    .prix{
-    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
    }
+   .prix p{
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-right: 10px;
+   }
+   
+.card-r:hover .icon-container {
+    opacity: 1;
+    background-color: #99E2D0;
+    width: 70px; 
+    height: 94.4px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container i {
+    color: white;
+    font-size: 18px;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.restaurant-card-r {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.restaurant-card-r:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.restaurant-card-r:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+.restaurant-card-r:nth-of-type(3) {
+  animation-delay: 1.8s;
+}
+
+.restaurant-card-r a {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.restaurant-card-r:nth-of-type(1) a:nth-child(2) { animation-delay: 0.4s; }
+.restaurant-card-r:nth-of-type(1) a:nth-child(3) { animation-delay: 0.6s; }
+.restaurant-card-r:nth-of-type(1) a:nth-child(4) { animation-delay: 0.8s; }
+
+.restaurant-card-r:nth-of-type(2) a:nth-child(2) { animation-delay: 1.2s; }
+.restaurant-card-r:nth-of-type(2) a:nth-child(3) { animation-delay: 1.4s; }
+.restaurant-card-r:nth-of-type(2) a:nth-child(4) { animation-delay: 1.6s; }
+
+.restaurant-card-r:nth-of-type(3) a:nth-child(2) { animation-delay: 2s; }
+.restaurant-card-r:nth-of-type(3) a:nth-child(3) { animation-delay: 2.2s; }
+.restaurant-card-r:nth-of-type(3) a:nth-child(4) { animation-delay: 2.4s; }
+
+.restaurant-card-r:nth-of-type(4) a:nth-child(2) { animation-delay: 2.6s; }
+.restaurant-card-r:nth-of-type(4) a:nth-child(3) { animation-delay: 2.8s; }
+.restaurant-card-r:nth-of-type(4) a:nth-child(4) { animation-delay: 3s; }
    @media (min-width: $breakpoint-desktop){
     .menu p{
       font-weight: 300;
@@ -130,8 +208,5 @@
      .card-r-text p{
       font-family:  'Roboto' , sans-serif;
       font-weight: 300;
-     }
-     .prix{
-      padding-right: 5px;
      }
    }
