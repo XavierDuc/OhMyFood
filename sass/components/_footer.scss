@@ -1,10 +1,23 @@
 footer{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba(53, 53, 53, 1);
+        @media (min-width: $breakpoint-desktop){
+        display: flex;
+        flex-direction: row-reverse;
+.menu-footer ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    }
+.menu-footer li{
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-   background-color: black;
-   @media (min-width: $breakpoint-desktop){
-    display: flex;
+    }
+.footer-logo{
+    margin-top: 18px;
+    padding-left: 15px;
+    }
    }
   }
