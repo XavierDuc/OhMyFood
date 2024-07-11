@@ -13,9 +13,11 @@
    .info-button-r:hover{
   opacity: 0.5;
    }
-   .info-button-r p{
+   .info-button-r span{
     margin: 0;
     font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
    }
    @media (min-width: $breakpoint-desktop){
     .info-button-r{

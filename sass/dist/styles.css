@@ -189,7 +189,7 @@ body.loaded .main-container {
 .info-button:hover {
   opacity: 0.5;
 }
-.info-button p {
+.info-button span {
   margin: 0;
   font-size: 16px;
   font-family: "roboto", sans-serif;
@@ -277,6 +277,14 @@ body.loaded .main-container {
   font-size: 16px;
 }
 
+.button-fonctionnement span {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .button-f p {
   padding: 0;
   margin: 0;
@@ -320,15 +328,12 @@ body.loaded .main-container {
 }
 
 .restaurant-cards a {
-  width: 100%;
   padding-bottom: 20px;
   text-decoration: none;
   color: black;
-  margin-left: 10px;
 }
 
 .card {
-  background-color: red;
   width: 95%;
   margin-top: 15px;
 }
@@ -374,6 +379,7 @@ body.loaded .main-container {
   border-radius: 20px;
   box-sizing: border-box;
   overflow: hidden;
+  margin-left: 10px;
 }
 
 .card-content {
@@ -457,10 +463,14 @@ body.loaded .main-container {
     justify-content: space-between;
   }
   .restaurant-cards a {
-    width: 33%;
+    width: 100%;
     padding-bottom: 20px;
     text-decoration: none;
     color: black;
+  }
+  .card {
+    width: 50%;
+    margin-top: 15px;
   }
   .card img {
     width: 100%;
@@ -537,11 +547,13 @@ body.loaded .main-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 20px;
   }
   .restaurant-cards-normal {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 20px;
   }
 }
 footer {
@@ -691,7 +703,7 @@ footer {
     margin: 0 auto;
     z-index: 1;
     margin-top: -30px;
-    left: -15px;
+    padding-bottom: 30px;
   }
   .restaurant-title-r {
     font-family: "Shrikhand", serif;
@@ -981,9 +993,11 @@ footer {
   opacity: 0.5;
 }
 
-.info-button-r p {
+.info-button-r span {
   margin: 0;
   font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media (min-width: 767.98px) {
