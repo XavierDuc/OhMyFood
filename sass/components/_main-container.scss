@@ -1,62 +1,85 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
- 
-  .loader {
-    border: 16px solid #99E2D0; 
-    border-top: 16px solid #FF79DA ;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 1s linear infinite, fadeOut 2s forwards;
-    position: fixed;
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    @media (min-width: $breakpoint-desktop){
-        top: 40%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  border: 16px solid #99E2D0;
+  border-top: 16px solid #FF79DA;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite, fadeOut 2s forwards;
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  @media (min-width: $breakpoint-desktop){
+    top:40%;
     left: 45%;
-    }
   }
-  
-  /* Spinner animation */
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+}
 
-  @keyframes fadeOut {
-    0% { opacity: 1; }
-    99% { opacity: 1; }
-    100% { opacity: 0; visibility: hidden; }
-  }
-  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
-  .main-container {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  99% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
 
-  body.loaded .loader {
-    display: none;
+body.preload {
+  overflow: hidden;
+}
+
+body.preload .main-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: load 0.8s forwards;
+  animation-delay: 2s; /* Match this with the loader animation duration */
+}
+
+@keyframes load {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
   }
-  
-  body.loaded .main-container {
-    display: block;
-    opacity: 1;
-    animation: showContent 0.5s forwards;
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  @keyframes showContent {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
+}
+
+body:not(.preload) {
+  overflow: auto;
+}
+
+body.loaded {
+  overflow: auto;
+}
+
+body.loaded .main-container {
+  animation: none;
+}
+
+/* New animation to remove overflow: hidden */
+@keyframes allowScroll {
+  0% { overflow: hidden; }
+  100% { overflow: auto; }
+}
+
+/* Apply allowScroll animation */
+body.preload.allowScroll {
+  animation: allowScroll 0s 2s forwards; /* 0s duration, start after 2s */
+}
+
+/* Ensure the loader disappears after its animation */
+.loader-hidden {
+  display: none;
+}
