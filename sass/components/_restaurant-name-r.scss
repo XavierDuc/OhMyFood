@@ -20,7 +20,7 @@
    .restaurant-name{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
    
    & i{
   padding-bottom: 18px;
@@ -29,30 +29,54 @@
     display: none;
   }
   
-  .icon {
-    font-size: 30px;
+  .animation-heart {
+    font-size: 25px;
     cursor: pointer;
+    position: relative;
     display: inline-block;
-    margin-top: -40px;
+    padding-left: 10px;
+    padding-bottom: 35px;
   }
   
-  
-  .icon:before {
-      content: "\f004";
-      font-family: "Font Awesome 6 Free";
-      font-weight: 400; 
-      color: black;
-      transition: font-weight 0.2s ease, color 0.5s ease-in; 
+  .animation-heart .fa-heart {
+    position: absolute;
+    transition: all 0.5s ease;
   }
   
-  
-  .hidden:checked + .icon:before {
-      font-weight: 900; 
-      background: linear-gradient(360deg, #FF79DA, #9356DC);;
-      -webkit-background-clip: text;
-      color: transparent;
-      
+  .animation-heart .fa-heart.full {
+    font-weight: 900;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
   }
+  
+  .animation-heart .fa-heart.full::before {
+    content: '\f004';
+    font-weight: 900;
+    background: linear-gradient(45deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+  }
+  
+  .animation-heart .fa-heart.empty {
+    color: #333;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+  
+  .animation-heart:hover .fa-heart.full {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .animation-heart:hover .fa-heart.empty {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
   
 }
 @media (min-width: $breakpoint-desktop){
