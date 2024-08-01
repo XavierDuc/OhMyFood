@@ -439,7 +439,6 @@ body.preload.allowScroll {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  padding-right: 50px;
 }
 
 .animation-heart .fa-heart {
