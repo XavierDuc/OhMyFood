@@ -439,6 +439,7 @@ body.preload.allowScroll {
   cursor: pointer;
   position: relative;
   display: inline-block;
+  padding-right: 50px;
 }
 
 .animation-heart .fa-heart {
@@ -646,6 +647,10 @@ footer {
   width: 100%;
   padding: 10px;
   background-color: #fff;
+}
+
+a {
+  color: black;
 }
 
 .arrow {
